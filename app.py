@@ -35,3 +35,5 @@ lname = 'Zaheer'
 msg = f'[{fname} {lname}] is a coder'
 print(msg)
 print(len(msg))
+
+print(fname in msg)
