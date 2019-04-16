@@ -91,3 +91,31 @@ print(x, y, z)
 
 
 # dictionary
+
+customer = {
+    "name": "Rizwan",
+    "age": 25,
+    "is_verified": True
+}
+
+print(customer["name"])
+print(customer.get('birthdate', "30 - Sep - 1993"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
