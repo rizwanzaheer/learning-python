@@ -53,8 +53,32 @@ else:
 print("Enjoy your day!")
 
 
+if is_cold and is_hot:
+    print("what the hell!")
+
+if is_cold and not is_hot:
+    print("what the hell!")
+
+if is_cold or is_hot:
+    print("what the hell is going on!")
 
 
 
+# while also have a else block like
+# while true:
+# .....
+# else
+# .....
 
+matrix = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+]
+
+print(matrix[2][2])
+
+# touple
+numbers = (1, 3, 4)
+print(numbers[2])
 
