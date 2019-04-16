@@ -101,6 +101,18 @@ customer = {
 print(customer["name"])
 print(customer.get('birthdate', "30 - Sep - 1993"))
 
+phone = input("Phone: ")
+digits_mapping = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three "
+}
+
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + " "
+
+print(output)
 
 
 
