@@ -82,3 +82,12 @@ print(matrix[2][2])
 numbers = (1, 3, 4)
 print(numbers[2])
 
+
+# unpacking with touple
+coordinates = (3, 4, 5)
+x, y, z = coordinates
+
+print(x, y, z)
+
+
+# dictionary
