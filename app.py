@@ -101,26 +101,26 @@ customer = {
 print(customer["name"])
 print(customer.get('birthdate', "30 - Sep - 1993"))
 
-phone = input("Phone: ")
-digits_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three "
-}
-
-output = ""
-for ch in phone:
-    output += digits_mapping.get(ch, "!") + " "
-
-print(output)
+# phone = input("Phone: ")
+# digits_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three "
+# }
+#
+# output = ""
+# for ch in phone:
+#     output += digits_mapping.get(ch, "!") + " "
+#
+# print(output)
 
 # functions
-def greeting_user():
-    print("Hi there, welcome on board!")
+def greeting_user(name):
+    print(f"Hi {name}, Welcome on board!")
 
 
 # end
-greeting_user()
+greeting_user('Rizwan')
 
 
 
