@@ -115,12 +115,12 @@ print(customer.get('birthdate', "30 - Sep - 1993"))
 # print(output)
 
 # functions
-def greeting_user(name):
-    print(f"Hi {name}, Welcome on board!")
+def greeting_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}, Welcome on board!")
 
 
 # end
-greeting_user('Rizwan')
+greeting_user(last_name='Zaheer', first_name='Rizwan')
 
 
 
