@@ -1,4 +1,7 @@
 import converters
+# or
+from converters import lbs_to_kg;
+from utils import find_max;
 
 print("hello Rizwan Zaheer")
 price = 20
@@ -187,4 +190,7 @@ class Cat(Mammal):
 dog = Dog()
 dog.walk()
 
-converters.lbs_to_kg(300)
+lbs_to_kg(300)
+
+numbers = [10, 332, 4, 3435, 4]
+print(find_max(numbers))
