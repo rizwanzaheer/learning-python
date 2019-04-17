@@ -1,3 +1,5 @@
+import converters
+
 print("hello Rizwan Zaheer")
 price = 20
 print(price)
@@ -138,6 +140,11 @@ greeting_user(last_name='Zaheer', first_name='Rizwan')
 # Using Classes
 
 class Point:
+    # constructor
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
     def move(self):
         print("move")
 
@@ -145,15 +152,39 @@ class Point:
         print("draw")
 
 
-point = Point();
+# point = Point();
+#
+# point.x = 10
+# point.y = 20
+# print(point.x)
+# print(point.y)
+# point.move()
 
-point.x = 10
-point.y = 20
+# resolve problem in classes
+point = Point(10, 20);
+
+# point.x = 30
+# point.y = 40
 print(point.x)
 print(point.y)
-point.move();
+point.move()
 
 
+# Inheritance
+class Mammal:
+    def walk(self):
+        print("walk")
 
 
+class Dog(Mammal):
+    pass
 
+
+class Cat(Mammal):
+    pass
+
+
+dog = Dog()
+dog.walk()
+
+converters.lbs_to_kg(300)
