@@ -124,20 +124,34 @@ greeting_user(last_name='Zaheer', first_name='Rizwan')
 
 
 # using try catch
-try:
-    age = int(input("Age: "))
-    income = 20000
-    risk = income / age
-    print(age)
-except ZeroDivisionError:
-    print("Age can't be zero!")
-except ValueError:
-    print('Invalid value')
+# try:
+#     age = int(input("Age: "))
+#     income = 20000
+#     risk = income / age
+#     print(age)
+# except ZeroDivisionError:
+#     print("Age can't be zero!")
+# except ValueError:
+#     print('Invalid value')
 
 
+# Using Classes
+
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
 
 
+point = Point();
 
+point.x = 10
+point.y = 20
+print(point.x)
+print(point.y)
+point.move();
 
 
 
