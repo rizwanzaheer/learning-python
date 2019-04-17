@@ -114,10 +114,13 @@ for ch in phone:
 
 print(output)
 
+# functions
+def greeting_user():
+    print("Hi there, welcome on board!")
 
 
-
-
+# end
+greeting_user()
 
 
 
