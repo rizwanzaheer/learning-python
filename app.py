@@ -123,7 +123,16 @@ def greeting_user(first_name, last_name):
 greeting_user(last_name='Zaheer', first_name='Rizwan')
 
 
-
+# using try catch
+try:
+    age = int(input("Age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print("Age can't be zero!")
+except ValueError:
+    print('Invalid value')
 
 
 
