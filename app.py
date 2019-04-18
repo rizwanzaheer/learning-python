@@ -1,7 +1,27 @@
 import converters
+import random
 # or
-from converters import lbs_to_kg;
-from utils import find_max;
+from converters import lbs_to_kg
+from utils import find_max
+
+# import package
+import ecommerce.shipping
+# or
+from ecommerce.shipping import calc_shipping
+# or
+from ecommerce import shipping
+
+for i in range(3):
+    print(random.randint(10, 20))
+
+members = ["rizwan", "zaheer", "attique"]
+print(random.choice(members))
+
+ecommerce.shipping.calc_shipping()
+# or
+calc_shipping()
+# or
+shipping.calc_shipping()
 
 print("hello Rizwan Zaheer")
 price = 20
@@ -194,3 +214,5 @@ lbs_to_kg(300)
 
 numbers = [10, 332, 4, 3435, 4]
 print(find_max(numbers))
+
+
