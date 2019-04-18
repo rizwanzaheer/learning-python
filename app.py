@@ -11,6 +11,13 @@ from ecommerce.shipping import calc_shipping
 # or
 from ecommerce import shipping
 
+from pathlib import Path
+
+path = Path()
+
+for file in path.glob('*.py'):
+    print(f"files in path is: {file}")
+
 for i in range(3):
     print(random.randint(10, 20))
 
@@ -22,6 +29,17 @@ ecommerce.shipping.calc_shipping()
 calc_shipping()
 # or
 shipping.calc_shipping()
+
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second  # returning touple
+
+
+dice = Dice()
+print(f"roll dice value is: {dice.roll()}")
 
 print("hello Rizwan Zaheer")
 price = 20
