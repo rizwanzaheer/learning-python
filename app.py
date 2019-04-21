@@ -1,4 +1,5 @@
 import converters
+import openpyxl as xl
 import random
 # or
 from converters import lbs_to_kg
@@ -12,6 +13,26 @@ from ecommerce.shipping import calc_shipping
 from ecommerce import shipping
 
 from pathlib import Path
+
+
+wb = xl.load_workbook('transactions.xlsx')
+sheet = wb['Sheet1']
+
+cell = sheet['a1']
+# or
+cell = sheet.cell(1, 1)
+# print(cell.value)
+# print(sheet.max_row)
+
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9
+    corrected_price_cell = sheet.cell(row, 4)
+    corrected_price_cell.value = corrected_price
+    print(cell.value)
+    print(row)
+
+wb.save('transctions2.xlsx')
 
 path = Path()
 
